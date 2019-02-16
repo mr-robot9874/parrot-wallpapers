@@ -15,6 +15,10 @@ install:
 	chown root:root -R $(DESTDIR)/usr/share/gnome-background-properties/
 	chown root:root -R $(DESTDIR)/usr/share/mate-background-properties/
 	
-	chmod 644 -R $(DESTDIR)/usr/share/backgrounds
-	chmod 644 -R $(DESTDIR)/usr/share/gnome-background-properties/
-	chmod 644 -R $(DESTDIR)/usr/share/mate-background-properties/
+	chmod 644  $(DESTDIR)/usr/share/backgrounds/*
+	chmod 644  $(DESTDIR)/usr/share/gnome-background-properties/*
+	chmod 644  $(DESTDIR)/usr/share/mate-background-properties/*
+	
+	chmod 755  $(DESTDIR)/usr/share/backgrounds/
+	chmod 755  $(DESTDIR)/usr/share/gnome-background-properties/
+	chmod 755  $(DESTDIR)/usr/share/mate-background-properties/
